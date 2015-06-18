@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+    <properties>
+        <title>Page Title</title>
+        <author email="user@company.com">mojohaus</author>
+    </properties>
+
+    <!-- Optional HEAD element, which is copied as is into the XHTML <head> element -->
+    <head>
+
+    </head>
+
+    <body>
+
+        <!-- The body of the document contains a number of sections -->
+        <section name="Plugins">
+
+            <p> Depending on their maturity, the available plugins are organized into groups as shown below. While using a
+                pre-release or sandbox plugin might seem risky, it is your chance to provide feedback to the community such that the
+                plugin can eventually reach production state.
+            </p>
+            <p> In order to guard against corrupted downloads/installations, it is highly recommended to
+                <a href="http://www.apache.org/dev/release-signing#verifying-signature">verify the signature</a> of the release bundles against the public
+                <a href="http://mojo.codehaus.org/KEYS">KEYS</a> used by the Codehaus Mojo developers.</p>
+
+            <ul>
+                <li><a href="#Production_Plugins">Production Plugins</a></li>
+                <li><a href="#Pre-release_Plugins">Pre-release Plugins</a></li>
+                <li><a href="#Sandbox_Plugins">Sandbox Plugins</a></li>
+                <li><a href="#Plugin_Graveyard">Plugin Graveyard</a></li>
+            </ul>
+            <a name="Production_Plugins"/>
+            <subsection name="Production Plugins">
+                <p>The following plugins have been released and are generally available for production use.</p>
+                <table border="1">
+                    <tr>
+                        <th>Plugin</th>
+                        <th>Version</th>
+                        <th>Description</th>
+                        <th>Issue tracking</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><b>Application Server</b></td>
+                        <td colspan="2"><i>Plugins that support integration with application servers.</i></td>
+                    </tr>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:jboss-packaging-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:was6-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:weblogic-maven-plugin"/>
+                    </macro>
+                    <tr>
+                        <td colspan="2"><b>Generators / Compilers / Translators</b></td>
+                        <td colspan="2"><i>Plugins providing support for code generation, compilation and translation.</i></td>
+                    </tr>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:antlr-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:aspectj-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:axistools-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:castor-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:commons-attributes-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:gwt-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:hibernate3-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:idlj-maven-plugin"/>
+                    </macro> 
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:javacc-maven-plugin"/>
+                    </macro> 
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:jaxb2-maven-plugin"/>
+                    </macro> 
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:jpox-maven-plugin"/>
+                    </macro> 
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:jslint-maven-plugin"/>
+                    </macro> 
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:js-import-maven-plugin"/>
+                    </macro> 
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:jspc-maven-plugin"/>
+                    </macro> 
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:openjpa-maven-plugin"/>
+                    </macro> 
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:rmic-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:sablecc-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:sqlj-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:xdoclet-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:xmlbeans-maven-plugin"/>
+                    </macro>
+                    <tr>
+                        <td colspan="2"><b>IDEs</b></td>
+                        <td colspan="2"><i>Plugins that support integration with integrated developer environments.</i></td>
+                    </tr>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:nbm-maven-plugin"/>
+                    </macro>
+                    <tr>
+                        <td colspan="2"><b>Reporting</b></td>
+                        <td colspan="2"><i>Plugins which generate reports.</i></td>
+                    </tr>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:clirr-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:cobertura-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:scmchangelog-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:sonar-maven-plugin"/>
+                    </macro>
+
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:taglist-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:javancss-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:jdepend-maven-plugin"/>
+                    </macro>
+                    <tr>
+                        <td colspan="2"><b>Testing</b></td>
+                        <td colspan="2"><i>Plugins which support testing.</i></td>
+                    </tr>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:codenarc-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:findbugs-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:fitnesse-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:selenium-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:webtest-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:chronos-jmeter-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:chronos-surefire-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:chronos-report-maven-plugin"/>
+                    </macro>
+                    <tr>
+                        <td colspan="2"><b>Tools</b></td>
+                        <td colspan="2"><i>Miscellaneous tools available through Maven.</i></td>
+                    </tr>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:animal-sniffer-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:appassembler-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:build-helper-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:buildnumber-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:cassandra-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:ditaot-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:exec-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:keytool-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:latex-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:license-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:ounce-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:rpm-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:siteskinner-maven-plugin"/>
+                    </macro> 
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:sql-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:truezip-maven-plugin"/>
+                    </macro> 
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:versions-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:vfs-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:xml-maven-plugin"/>
+                    </macro>
+                </table>
+            </subsection>
+
+            <a name="Pre-release_Plugins"/>
+            <subsection name="Pre-release Plugins">
+                <p>The following are pre-releases of plugins. They have had releases, but are not deemed ready for production use yet.</p>
+                <table border="1">
+                    <tr>
+                        <th>Plugin</th>
+                        <th>Version</th>
+                        <th>Description</th>
+                        <th>Issue tracking</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><b>Generators / Compilers / Translators</b></td>
+                        <td colspan="2"><i>Plugins providing support for code generation, compilation and translation.</i></td>
+                    </tr>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:apt-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:cbuild-parent"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:enchanter-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:flatten-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:jspc-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:native-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:retrotranslator-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:smc-maven-plugin"/>
+                    </macro> 
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:springws-maven-plugin"/>
+                    </macro> 
+                    <tr>
+                        <td colspan="2"><b>IDEs</b></td>
+                        <td colspan="2"><i>Plugins that support integration with integrated developer environments.</i></td>
+                    </tr>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:ideauidesigner-maven-plugin"/>
+                    </macro>
+                    <tr>
+                        <td colspan="2"><b>Reporting</b></td>
+                        <td colspan="2"><i>Plugins which generate reports.</i></td>
+                    </tr>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:dashboard-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:docbook-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:emma-maven-plugin"/>
+                    </macro><!--
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:jdiff-maven-plugin"/>
+                    </macro>-->
+                    <!-- jdiff seems not availabe at all-->
+                    <tr>
+                        <td colspan="2"><b>Scripting</b></td>
+                        <td colspan="2"><i>Plugins which support script languages.</i></td>
+                    </tr>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:javascript-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:jruby-maven-plugin"/>
+                    </macro>
+                    <tr>
+                        <td colspan="2"><b>Testing</b></td>
+                        <td colspan="2"><i>Plugins which support testing.</i></td>
+                    </tr>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:dbunit-maven-plugin"/>
+                    </macro>
+                    <tr>
+                        <td colspan="2"><b>Tools</b></td>
+                        <td colspan="2"><i>Miscellaneous tools available through Maven.</i></td>
+                    </tr>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:batik-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:dbupgrade-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:ianal-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:jalopy-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:jasperreports-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:l10n-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:mrm-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:native2ascii-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:nsis-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:osxappbundle-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:properties-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:ship-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:templating-maven-plugin"/>
+                    </macro> 
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:tidy-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:solaris-maven-plugin"/>
+                    </macro> 
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:unix-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:wagon-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:webminifier-maven-plugin"/>
+                    </macro>
+                    <macro name="plugininfo">
+                        <param name="coordinate" value="org.codehaus.mojo:webstart-maven-plugin"/>
+                    </macro>
+                </table>
+            </subsection>
+            <a name="Sandbox_Plugins"/>
+            <subsection name="Sandbox Plugins">
+                <p> These are plugins which have been contributed but have not gained the attention of users or a committer interested in seeing it released. 
+                    <span style="text-decoration-style: dashed ">If you are looking for a plugin but do not see it in this list or the lists above, you should also check the subversion repository in case the 
+                        plugin hasn't been added to the list below yet.</span>
+                </p> 
+                <table border="1">
+                    <tr>
+                        <th>Plugin</th>
+                        <th>Version</th>                      
+                    </tr>
+                </table>
+            </subsection>
+            <a name="Plugin_Graveyard"/>
+            <subsection name="Plugin Graveyard">
+                <p>These are plugins which been deprecated or are no longer being maintained.
+                </p> 
+                <table border="1">
+                    <tr>
+                        <th>Plugin</th>
+                        <th>Version</th>
+                    </tr>
+                    <tr><td>xslt</td><td>Deprecated use the xml-maven-plugin instead.</td></tr>
+                </table>
+            </subsection>
+
+
+        </section>
+
+
+
+
+    </body>
+
+</document>
